@@ -1,31 +1,20 @@
 <template>
   <div id="app">
-    <h2>
-      Vue To Do List
-      Simple Todo List with adding and filter by diff status.
-    </h2>
-
-    <CreateForm />
-    <TodoList />
-    <TodoListFilter />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import CreateForm from "./components/CreateForm.vue";
-import TodoList from "./components/TodoList.vue";
-import TodoListFilter from "./components/TodoListFilter.vue";
+
 // import axios from "axios";
 export default {
   name: "app",
   components: {
-    CreateForm,
-    TodoList,
-    TodoListFilter
+    
   },
   created: function() {
-    this.$store.dispatch("feachTodo");
-  }
+   
+  } 
 };
 </script>
 
