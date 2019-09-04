@@ -13,7 +13,7 @@ export default {
     
   },
   created: function() {
-   
+   this.$store.dispatch("feachTodo");
   } 
 };
 </script>
